@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Master</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        #gameCanvas {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background-color: #20232a;
+            border: 2px solid #61dafb;
+            overflow: hidden;
+        }
+        .target {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #61dafb;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 18px;
+            color: #61dafb;
+        }
+        #timer {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            color: #61dafb;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameCanvas">
+        <div id="score">Score: 0</div>
+        <div id="timer">Time: 30</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
